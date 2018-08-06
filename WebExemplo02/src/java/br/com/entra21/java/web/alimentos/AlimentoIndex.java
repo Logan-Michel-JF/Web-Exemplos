@@ -56,8 +56,8 @@ public class AlimentoIndex extends HttpServlet {
     }
 
     private void gerarTabela(List<AlimentoBean> alimentos) {
-        out.println("<div class='row'>");
-        out.println("<div class='col-md-12'>");
+        out.println("<div class='row mt-3'>");
+        out.println("<div class='col-md-8 offset-md-2'>");
         
         out.println("<table class='table table-striped table-hover'>");
         out.println("<thead>");
