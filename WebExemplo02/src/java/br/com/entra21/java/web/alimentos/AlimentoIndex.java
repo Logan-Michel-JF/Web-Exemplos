@@ -44,6 +44,10 @@ public class AlimentoIndex extends HttpServlet {
         out.println("<a href='/WebExemplo02/alimentos/cadastro' class=' btn btn-primary float-right'>Novo Alimento</a>");
         out.println("</div>");
         out.println("</div>");
+        
+        
+        gerarTabela(alimentos);
+        
 
         out.println("</div");
         out.println("</body>");
@@ -52,6 +56,9 @@ public class AlimentoIndex extends HttpServlet {
     }
 
     private void gerarTabela(List<AlimentoBean> alimentos) {
+        out.println("<div class='row'>");
+        out.println("<div class='col-md-12'>");
+        
         out.println("<table class='table table-striped table-hover'>");
         out.println("<thead>");
         out.println("<tr>");
@@ -88,5 +95,8 @@ public class AlimentoIndex extends HttpServlet {
         out.println("<th>Ação</th>");
         out.println("</tfoot>");
         out.println("</table>");
+        
+        out.println("</div>");
+        out.println("</div>");
     }
 }
